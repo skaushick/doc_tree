@@ -1,10 +1,8 @@
-var rect = {
-        perimeter: (x,y) => (2*(x+y)),
-        area : (x,y) => (x*y)
-};
+var rect = require("./rect");
 
 function solverRect(l,b){
     console.log("Rectengle solve");
+    rect.area(l,b)
 
     if(l<=0){
         console.log("negative scenario");
